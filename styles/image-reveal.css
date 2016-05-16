@@ -1,0 +1,51 @@
+/***************************
+  file: image-reveal.css 
+ **************************/
+
+/* tag styles */
+
+body {
+  font-family: Arial, sans-serif;
+ }
+
+ h1 {
+   font-size: 24px;	
+   margin: 12px 24px 0 24px;
+ }
+
+/* reveal component styles */
+
+.reveal__container { 
+  border: 1px solid #000;
+  height: 551px;
+  margin: 24px;
+  width: 980px;
+}
+
+.reveal__container > img {
+  position: absolute; 
+}
+
+.reveal__afterimage { 
+	clip: rect(0, 735px, 551px, 0);
+} 
+
+.reveal__activator {
+	cursor: col-resize; /* control handle */
+  height: 551px;
+	opacity: 0; 
+	position: absolute; 
+	width: 980px;
+}
+
+.reveal__instructions {
+  font-size: 15px;
+  margin: 12px 0 0 24px;
+}
+
+.reveal__photo-credit {
+  clear: both;
+  font-style: italic;
+  font-size: 11px;
+  margin: -12px 0 0 24px;
+}
